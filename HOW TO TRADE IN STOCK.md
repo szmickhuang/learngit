@@ -1,6 +1,6 @@
 # HOW TO TRADE IN STOCK
 
-by ***JESSE L. LIVERMORE***
+**by** ***JESSE L. LIVERMORE***
 
 ## PREFACE
 
