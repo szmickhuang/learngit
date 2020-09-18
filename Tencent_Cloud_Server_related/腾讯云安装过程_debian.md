@@ -25,9 +25,22 @@ apt update
 apt upgrade
 ```
 
-安装python3.8必须的库及软件：
+## 安装node.js
+```shell
+apt install nodejs npm
+node -v
+```
+
+
+## 安装python3.8必须的库及软件：
 ```shell
 apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl
+
+wget https://www.sqlite.org/2020/sqlite-autoconf-3330000.tar.gz
+tar xvf sqlite-autoconf-3330000.tar.gz
+cd sqlite-autoconf-3330000
+./configure --prefix=/usr/local/sqlite
+make && make install
 ```
 
 下载python 3.8.5
@@ -35,8 +48,19 @@ apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev l
 wget http://npm.taobao.org/mirrors/python/3.8.5/Python-3.8.5.tgz
 tar xvf Python-3.8.5.tgz
 cd Python-3.8.5
-./configure --enable-optimizations
-make
+```
+
+此时需修改setup.py
+```shell
+查找" sqlite_inc_paths" 新增
+'/usr/local/sqlite/include'
+'/usr/local/sqlite/include/sqlite3'
+```
+
+再安装python
+```shell
+./configure --enable-optimizations --enable-loadable-sqlite-extensions
+make -j `grep processor /proc/cpuinfo | wc -l`
 make install
 ```
 
@@ -58,51 +82,56 @@ mirrors = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host = pypi.tuna.tsinghua.edu.cn
 ```
 
-安装虚拟环境，进入虚拟环境
+## 安装虚拟环境，进入虚拟环境
+此时突然发现pip出问题了
 ```shell
-sudo -H pip3 install --upgrade pip
-sudo -H pip3 install --upgrade virtualenv
+No module named pip3
+```
+
+需要排除这个问题，强制重装pip3
+注意这里要用“python3”
+```shell
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3 get-pip.py
+```
+
+```shell
+sudo -H python -m pip3 install --upgrade pip
+sudo -H python -m pip3 install --upgrade virtualenv
 mkdir ~/myprojectdir
 cd ~/myprojectdir
 virtualenv myprojectenv
 source myprojectenv/bin/active
-pip install pip --upgrade --use-feature=2020-resolver
+python -m pip install pip --upgrade --use-feature=2020-resolver
 ```
 
-安装jupyterlab
+## 安装并设置jupyterlab
 ```shell
-pip install jupyterlab
+python -m pip install jupyterlab
+
+sha1:4de2eee9c661:dd597542536188fed6aa679ab6bc4203496d08d6
+
+mkdir /home/mick/data/jupyter
+mkdir /home/mick/data/jupyter/root
+cd /home/mick/data/jupyter
+python -c "import IPython; print(IPython.lib.passwd())"
+输入自定义密码，生成sha1串: sha1:c70ff9706539:0deebacedca7300f8aa4bd541d6d2bea946eeea8
+jupyter lab --generate-config --allow-root
+
+vi /root/.jupyter/jupyter_notebook_config.py
+	更改项目：
+	c.NotebookApp.ip = '*'
+	c.NotebookApp.allow_root = True
+	c.NotebookApp.open_browser = False
+	c.NotebookApp.port = 8347
+	c.NotebookApp.password = u'sha1:c70ff9706539:0deebacedca7300f8aa4bd541d6d2bea946eeea8'
+	c.ContentsManager.root_dir = '/home/mick/data/jupyter/root'
 ```
 
-把原有的debian 9升级到debian 10
+出现错误信息：
 ```shell
-sed -i 's/stretch/buster/g' /etc/apt/sources.list
-apt-get update && apt-get upgrade
-apt-get dist-upgrade
-reboot
+Command '('lsb_release', '-a')' returned non-zero exit status 1
 ```
-
-查看是否已升级为10（buster）了
 ```shell
-lsb_release -a
+sudo rm /usr/bin/lsb_release
 ```
-
-
-安装python3和pip标头
-```shell
-sudo apt install python3-pip python3-dev
-```
-
-为jupyter创建python虚拟环境
-```shell
-sudo -H pip3 install --upgrade pip
-sudo -H pip3 install virtualenv
-
-mkdir ~/myprojectdir
-cd ~/myprojectdir
-
-virtualenv myprojectenv
-
-source myprojectenv/bin/activate
-```
-
