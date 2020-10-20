@@ -55,10 +55,14 @@ $ P(B|A) = \frac{\frac{6}{45}}{\frac{2}{3}}=\frac{1}{5}=0.2 $
 设A事件为取出两件至少有一件是合格品，$ P(A)=1-\frac{C_m^2}{C_n^2}=\frac{n^2-n-m^2+m}{n^2-n} $
 B事件为取出两件均为合格品，$ P(B)=\frac{C_{n-m}^2}{C_n^2}=\frac{(n-m)^2-(n-m)}{n^2-n} $
 $ P(B|A)=\frac{(n-m)^2-(n-m)}{n^2-n-m^2+m} $
-
+       
 ##### 7. 掷一颗骰子两次，以$x, y$分别表示先后掷出的点数，记$$ A=\{x+y<10\}, B=\{x>y\} $$求$P(B|A),P(A|B)$。
 
 解：
+$ \overline{A}=\{(4,6), (5,5), (5,6), (6,4), (6,5), (6,6)\} \Rightarrow P(\overline{A}) = \frac{1}{6} \Rightarrow P(A)=\frac{5}{6}$
+$ P(B) = \frac{\frac{36-6}{2}}{36} = \frac{5}{12} $
+$ P(B|A) = \frac{P(AB)}{P(A)} = \frac{\frac{13}{36}}{\frac{5}{6}} = \frac{13}{30} $
+$ P(A|B) = \frac{P(AB)}{P(B)} = \frac{\frac{13}{36}}{\frac{5}{12}}= \frac{13}{15} $
 
 ##### 8. 已知$P(A)=\frac{1}{3}, P(B|A)=\frac{1}{4}, P(A|B)=\frac{1}{6}$，求$P(A \cup B)$。
 
@@ -70,6 +74,9 @@ $ P(A \cup B) = P(A)+P(B)-P(AB) = \frac{1}{3}+\frac{1}{2}-\frac{1}{12}=\frac{3}{
 ##### 9. 已知$P(\overline{A})=0.3,P(B)=0.4,P(A \overline{B})=0.5$，求$P(B|A \cup \overline{B})$。
 
 解：
+$ P(AB) = P(A)-P(A\overline{B}) = 1-P(\overline{A})-P(A\overline{B}) = 1-0.3-0.5=0.2 $
+$ P(A \cup \overline{B}) = P(\overline{B}) + P(AB) = 1-P(B)+P(AB) = 1-0.4+0.2=0.8 $
+$ P(B|A\cup \overline{B}) = \frac{P(B \cap (A \cup \overline{B}))}{P(A \cup \overline{B})} = \frac{P(AB)}{P(A \cup \overline{B})}  = \frac{0.2}{0.8} = 0.25 $
 
 ##### 10. 设$A,B$为两事件，$P(A)=P(B)=\frac{1}{3},P(A|B)=\frac{1}{6}$，求$P(\overline{A}|\overline{B})$。
 
