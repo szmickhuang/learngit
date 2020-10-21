@@ -81,10 +81,22 @@ $ P(B|A\cup \overline{B}) = \frac{P(B \cap (A \cup \overline{B}))}{P(A \cup \ove
 ##### 10. 设$A,B$为两事件，$P(A)=P(B)=\frac{1}{3},P(A|B)=\frac{1}{6}$，求$P(\overline{A}|\overline{B})$。
 
 解：
+$ P(AB) = P(B)P(A|B) = \frac{1}{3} × \frac{1}{6} = \frac{1}{18}  $
+$ P(\overline{A} \overline{B}) = 1-(P(A)+P(B)-P(AB)) = 1-(\frac{1}{3} + \frac{1}{3} - \frac{1}{18}) = 1-\frac{11}{18} = \frac{7}{18} $
+$ P(\overline{A}|\overline{B}) = \frac{P(\overline{A} \overline{B})}{P(\overline{B})} = \frac{\frac{7}{18}}{\frac{2}{3}} = \frac{7}{12} $
 
 ##### 11. 口袋中有1个白球，1个黑球，从中任取1个，若取出白球，则试验停止；若取出黑球，则把取出的黑球放回的同时，再加入1个黑球，如此下去，直到取出的是白球为止，试求下列事件的概率：<BR>(1) 取到第$n$次，试验没有结束；<br>(2) 取到第$n$次，试验恰好结束。
 
 解：
+(1) 
+设第$i$次取出白球事件为$W_i$，取出黑球事件为$B_i$。
+取到第$n$次试验没有结束，那么整个事件为：$B_1B_2B_3...B_n$
+$ P(B_1B_2B_3...B_n) = P(B_1)·P(B_2|B_1)·P(B_3|B_1B_2) \dots ·P(B_n|B_1B_2 \dots B_{n-1}) = \frac{1}{2}×\frac{2}{3}×\frac{3}{4} \dots × \frac{n}{n+1} = \frac{1}{n+1} $
+(2)
+设第$i$次取出白球事件为$W_i$，取出黑球事件为$B_i$。
+$\because$ 由(1)可知$ P(B_1B_2 \dots B_{n-1}) = \frac{1}{n} $
+$\therefore P(B_1B_2 \dots B_{n-1}W_n) = P(B_1B_2 \dots B_{n-1})·P(W_n|B_1B_2 \dots B_{n-1}) = \frac{1}{n} × \frac{1}{n+1} = \frac{1}{n^2+n} $
+
 
 ##### 12. 一盒晶体管中有8只合格品、2只不合格品。从中不返回地一只一只取出，试求第二次取出的是合格品的概率。
 
