@@ -101,10 +101,22 @@ $\therefore P(B_1B_2 \dots B_{n-1}W_n) = P(B_1B_2 \dots B_{n-1})·P(W_n|B_1B_2 \
 ##### 12. 一盒晶体管中有8只合格品、2只不合格品。从中不返回地一只一只取出，试求第二次取出的是合格品的概率。
 
 解：
+设第$i$次取出合格品事件为$A_i$
+$ P(A_2) = P(A_1A_2)+P(\overline{A_1}A_2) = P(A_1)P(A_2|A_1)+P(\overline{A_1})P(A_2|\overline{A_1}) = \frac{8}{10} \times \frac{7}{9}+ \frac{2}{10} \times \frac{8}{9} = \frac{72}{90} = 0.8 $
 
 ##### 13. 甲口袋有$a$个白球、$b$个黑球，乙口袋有$n$个白球、$m$个黑球。<br>(1) 从甲口袋任取1个球放入乙口袋，然后再从乙口袋任取1个球。试求最后从乙口袋取出的是白球的概率。<br>(2) 从甲口袋任取2个球放入乙口袋，然后再从乙口袋任取1个球。试求最后从乙口袋取出的是白球的概率。
 
 解：
+(1)
+设从甲口袋取出一个球是白球事件为$A$，则从甲口袋取出一个球是黑球事件为$\overline{A}$；从乙口袋取出一个白球事件为$B$，则从乙口袋取出一个黑球事件为$\overline{B}$。
+$ P(B)=P(AB)+P(\overline{A}B)=P(A)P(B|A)+P(\overline{A})P(B|\overline{A)}) = \frac{a}{a+b} \cdot \frac{n+1}{n+m+1} + \frac{b}{a+b} \cdot \frac{n}{n+m+1}= \frac{an+a+bn}{(a+b)(n+m+1)} $
+(2)
+设从甲口袋取出第一个白球事件为$A_1$，第二个白球事件为$A_2$，从乙口袋取出白球事件为$B$
+$ P(B) = P(A_1A_2B)+P(\overline{A_1}A_2B)+P(A_1\overline{A_2}B)+P(\overline{A_1}\overline{A_2}B) $
+$ = P(A_1)P(A_2|A_1)P(B|A_1A_2) + P(\overline{A_1})P(A_2|\overline{A_1})P(B|\overline{A_1}A_2) + P(A_1)P(\overline{A_2}|A_1)P(B|A_1\overline{A_2}) + P(\overline{A_1}P(\overline{A_2}|\overline{A_1}))P(B|\overline{A_1}\overline{A_2}) $
+$ =\frac{a}{a+b} \cdot \frac{a-1}{a+b-1} \cdot \frac{n+2}{n+m+2} + \frac{b}{a+b} \cdot \frac{a}{a+b-1} \cdot \frac{n+1}{n+m+2} + \frac{a}{a+b} \cdot \frac{b}{a+b-1} \cdot \frac{n+1}{n+m+2} + \frac{b}{a+b} \cdot \frac{b-1}{a+b-1} \cdot \frac{n}{n+m+2} $
+$ = \frac{a(a-1)(n+2)+2ab(n+1)+b(b-1)n}{(a+b)(a+b-1)(n+m-2)} $
+
 
 ##### 14. 有$n$个口袋，每个口袋中均有$a$个白球、$b$个黑球。从第一个口袋中任取一球放入第二个口袋，再从第二个口袋中任取一个球放入第三个口袋，如此下去，从第$n-1$个口袋中任取一球放入第$n$个口袋，最后从第$n$个口袋中任取一球，求此时取到的是白球的概率。
 
