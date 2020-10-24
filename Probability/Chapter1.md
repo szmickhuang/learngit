@@ -81,9 +81,9 @@ $ P(B|A\cup \overline{B}) = \frac{P(B \cap (A \cup \overline{B}))}{P(A \cup \ove
 ##### 10. 设$A,B$为两事件，$P(A)=P(B)=\frac{1}{3},P(A|B)=\frac{1}{6}$，求$P(\overline{A}|\overline{B})$。
 
 解：
-$ P(AB) = P(B)P(A|B) = \frac{1}{3} × \frac{1}{6} = \frac{1}{18}  $
-$ P(\overline{A} \overline{B}) = 1-(P(A)+P(B)-P(AB)) = 1-(\frac{1}{3} + \frac{1}{3} - \frac{1}{18}) = 1-\frac{11}{18} = \frac{7}{18} $
-$ P(\overline{A}|\overline{B}) = \frac{P(\overline{A} \overline{B})}{P(\overline{B})} = \frac{\frac{7}{18}}{\frac{2}{3}} = \frac{7}{12} $
+$$ P(AB) = P(B)P(A|B) = \frac{1}{3} × \frac{1}{6} = \frac{1}{18}  $$
+$$ P(\overline{A} \overline{B}) = 1-(P(A)+P(B)-P(AB)) = 1-(\frac{1}{3} + \frac{1}{3} - \frac{1}{18}) = 1-\frac{11}{18} = \frac{7}{18} $$
+$$ P(\overline{A}|\overline{B}) = \frac{P(\overline{A} \overline{B})}{P(\overline{B})} = \frac{\frac{7}{18}}{\frac{2}{3}} = \frac{7}{12} $$
 
 ##### 11. 口袋中有1个白球，1个黑球，从中任取1个，若取出白球，则试验停止；若取出黑球，则把取出的黑球放回的同时，再加入1个黑球，如此下去，直到取出的是白球为止，试求下列事件的概率：<BR>(1) 取到第$n$次，试验没有结束；<br>(2) 取到第$n$次，试验恰好结束。
 
@@ -102,20 +102,20 @@ $\therefore P(B_1B_2 \dots B_{n-1}W_n) = P(B_1B_2 \dots B_{n-1})·P(W_n|B_1B_2 \
 
 解：
 设第$i$次取出合格品事件为$A_i$
-$ P(A_2) = P(A_1A_2)+P(\overline{A_1}A_2) = P(A_1)P(A_2|A_1)+P(\overline{A_1})P(A_2|\overline{A_1}) = \frac{8}{10} \times \frac{7}{9}+ \frac{2}{10} \times \frac{8}{9} = \frac{72}{90} = 0.8 $
+$$ P(A_2) = P(A_1A_2)+P(\overline{A_1}A_2) = P(A_1)P(A_2|A_1)+P(\overline{A_1})P(A_2|\overline{A_1}) = \frac{8}{10} \times \frac{7}{9}+ \frac{2}{10} \times \frac{8}{9} = \frac{72}{90} = 0.8 $$
 
 ##### 13. 甲口袋有$a$个白球、$b$个黑球，乙口袋有$n$个白球、$m$个黑球。<br>(1) 从甲口袋任取1个球放入乙口袋，然后再从乙口袋任取1个球。试求最后从乙口袋取出的是白球的概率。<br>(2) 从甲口袋任取2个球放入乙口袋，然后再从乙口袋任取1个球。试求最后从乙口袋取出的是白球的概率。
 
 解：
 (1)
 设从甲口袋取出一个球是白球事件为$A$，则从甲口袋取出一个球是黑球事件为$\overline{A}$；从乙口袋取出一个白球事件为$B$，则从乙口袋取出一个黑球事件为$\overline{B}$。
-$ P(B)=P(AB)+P(\overline{A}B)=P(A)P(B|A)+P(\overline{A})P(B|\overline{A)}) = \frac{a}{a+b} \cdot \frac{n+1}{n+m+1} + \frac{b}{a+b} \cdot \frac{n}{n+m+1}= \frac{an+a+bn}{(a+b)(n+m+1)} $
+$$ P(B)=P(AB)+P(\overline{A}B)=P(A)P(B|A)+P(\overline{A})P(B|\overline{A)}) = \frac{a}{a+b} \cdot \frac{n+1}{n+m+1} + \frac{b}{a+b} \cdot \frac{n}{n+m+1}= \frac{an+a+bn}{(a+b)(n+m+1)} $$
 (2)
 设从甲口袋取出第一个白球事件为$A_1$，第二个白球事件为$A_2$，从乙口袋取出白球事件为$B$
-$ P(B) = P(A_1A_2B)+P(\overline{A_1}A_2B)+P(A_1\overline{A_2}B)+P(\overline{A_1}\overline{A_2}B) $
-$ = P(A_1)P(A_2|A_1)P(B|A_1A_2) + P(\overline{A_1})P(A_2|\overline{A_1})P(B|\overline{A_1}A_2) + P(A_1)P(\overline{A_2}|A_1)P(B|A_1\overline{A_2}) + P(\overline{A_1}P(\overline{A_2}|\overline{A_1}))P(B|\overline{A_1}\overline{A_2}) $
-$ =\frac{a}{a+b} \cdot \frac{a-1}{a+b-1} \cdot \frac{n+2}{n+m+2} + \frac{b}{a+b} \cdot \frac{a}{a+b-1} \cdot \frac{n+1}{n+m+2} + \frac{a}{a+b} \cdot \frac{b}{a+b-1} \cdot \frac{n+1}{n+m+2} + \frac{b}{a+b} \cdot \frac{b-1}{a+b-1} \cdot \frac{n}{n+m+2} $
-$ = \frac{a(a-1)(n+2)+2ab(n+1)+b(b-1)n}{(a+b)(a+b-1)(n+m-2)} $
+$$ P(B) = P(A_1A_2B)+P(\overline{A_1}A_2B)+P(A_1\overline{A_2}B)+P(\overline{A_1}\overline{A_2}B) $$
+$$ = P(A_1)P(A_2|A_1)P(B|A_1A_2) + P(\overline{A_1})P(A_2|\overline{A_1})P(B|\overline{A_1}A_2) + P(A_1)P(\overline{A_2}|A_1)P(B|A_1\overline{A_2}) + P(\overline{A_1}P(\overline{A_2}|\overline{A_1}))P(B|\overline{A_1}\overline{A_2}) $$
+$$ =\frac{a}{a+b} \cdot \frac{a-1}{a+b-1} \cdot \frac{n+2}{n+m+2} + \frac{b}{a+b} \cdot \frac{a}{a+b-1} \cdot \frac{n+1}{n+m+2} + \frac{a}{a+b} \cdot \frac{b}{a+b-1} \cdot \frac{n+1}{n+m+2} + \frac{b}{a+b} \cdot \frac{b-1}{a+b-1} \cdot \frac{n}{n+m+2} $$
+$$ = \frac{a(a-1)(n+2)+2ab(n+1)+b(b-1)n}{(a+b)(a+b-1)(n+m-2)} $$
 
 
 ##### 14. 有$n$个口袋，每个口袋中均有$a$个白球、$b$个黑球。从第一个口袋中任取一球放入第二个口袋，再从第二个口袋中任取一个球放入第三个口袋，如此下去，从第$n-1$个口袋中任取一球放入第$n$个口袋，最后从第$n$个口袋中任取一球，求此时取到的是白球的概率。
@@ -127,7 +127,7 @@ $ = \frac{a(a-1)(n+2)+2ab(n+1)+b(b-1)n}{(a+b)(a+b-1)(n+m-2)} $
 解：
 设掉在宿舍里、教室里和路上的事件分别为$A_1、A_2、A_3$，在这三个地方找回的事件为$B_1、B_2、B_3$
 找回钥匙的事件为$B$
-$ P(B) = P(A_1)P(B_1|A_1) + P(A_1)P(B_2|A_2) + P(A_3)P(B_3|A_3) = 0.5 \times 0.8 + 0.3 \times 0.3 + 0.2 \times 0.1 = 0.4+0.09+0.02=0.51 $
+$$ P(B) = P(A_1)P(B_1|A_1) + P(A_1)P(B_2|A_2) + P(A_3)P(B_3|A_3) = 0.5 \times 0.8 + 0.3 \times 0.3 + 0.2 \times 0.1 = 0.4+0.09+0.02=0.51 $$
 
 ##### 16. 两台车床加工同样的零件，第一台出现不合格品的概率是0.03，第二台出现不合格品的概率是0.06，加工出来的零件放在一起，并且已知第一台加工的零件比第二台加工的零件多一倍。<BR>(1) 求任取一个零件是合格品的概率；<BR>(2) 如果取出的零件是不合格品，求它是由第二台车床加工的概率。
 
@@ -182,11 +182,11 @@ $$ P(W|A) = \frac{P(WA)}{P(A)} = \frac{P(W)P(A|W)}{P(A)} = \frac{\frac{1}{2}}{\f
 解：
 
 
-##### 22. $m$个人相互传球，球从甲开始传出，每次传球时，传球者等可能地把球传给其余$m-1$个人中地任何一个。求第$n$次传球时仍由甲传出地概率。
+##### 22. $m$个人相互传球，球从甲开始传出，每次传球时，传球者等可能地把球传给其余$m-1$个人中地任何一个。求第$n$次传球时仍由甲传出的概率。
 
 解：
 
-##### 23. 甲、乙两人轮流掷一颗骰子，甲先掷，每当某人掷出1点时，则交给对方掷，否则此人继续掷。试求第$n$次由甲掷地概率。
+##### 23. 甲、乙两人轮流掷一颗骰子，甲先掷，每当某人掷出1点时，则交给对方掷，否则此人继续掷。试求第$n$次由甲掷的概率。
 
 解：
 
@@ -202,23 +202,27 @@ $$ P(W|A) = \frac{P(WA)}{P(A)} = \frac{P(W)P(A|W)}{P(A)} = \frac{\frac{1}{2}}{\f
 
 证明：
 
-##### 27. 口袋中有$a$个白球、$b$个黑球和$n$个红球。现从中一个一个不返回地取球。试证白球比黑球出现得早得概率为$\frac{a}{a+b}$，与$n$无关。
+##### 27. 口袋中有$a$个白球、$b$个黑球和$n$个红球。现从中一个一个不返回地取球。试证白球比黑球出现得早的概率为$\frac{a}{a+b}$，与$n$无关。
 
 证明：
 
 ##### 28. 设$P(A)>0$，试证：$$ P(B|A) \geq 1-\frac{P(\overline{B})}{P(A)} $$
 
 证明：
+$$ P(B|A) = \frac{P(AB)}{P(A)} $$
 
 ##### 29. 若事件$A$与$B$互不相容，且$P(\overline{B}) \neq 0$，证明：$$ P(A|\overline{B}) = \frac{P(A)}{1-P(B)} $$
 
 证明：
+$$\because A \cap B=\emptyset $$
+$$ \therefore A \subseteq \overline{B} \Rightarrow P(A\overline{B}) = P(A) $$
+$$ P(A|\overline{B}) = \frac{P(A\overline{B})}{P(\overline{B})} = \frac{P(A)}{1-P(B)} $$
 
 ##### 30. 设$A、B$为任意两个事件，且$A \subset B$，$P(B)>0$，则$P(A) \leq P(A|B) $成立。
 
 证明：
 
-##### 31. 若$P(A|B)>P(A|\overline{B}$，试证$ P(B|A)>P(B|\overline{A}) $。
+##### 31. 若$P(A|B)>P(A|\overline{B})$，试证$ P(B|A)>P(B|\overline{A}) $。
 
 证明：
 
