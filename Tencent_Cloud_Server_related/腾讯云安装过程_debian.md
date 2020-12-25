@@ -42,6 +42,12 @@ sudo cp /root/.pip/pip.conf .
 sudo chown mick pip.conf
 ```
 
+通过curl命令向系统添加NodeSource存储库，再安装nodejs 12.x及npm
+```shell
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install nodejs npm
+```
+
 ## 安装虚拟环境，进入虚拟环境
 ```shell
 sudo -H python -m pip install --upgrade pip
