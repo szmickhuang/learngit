@@ -25,9 +25,15 @@ apt upgrade
 ```
 
 ## 安装node.js
+
+通过curl命令向系统添加NodeSource存储库，再安装nodejs 12.x及npm
 ```shell
-apt install nodejs npm python3-pip
-node -v
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+apt install nodejs
+
+nodejs --version
+
+apt install python3-pip
 
 rm /usr/bin/python
 ln -s /usr/bin/python3 /usr/bin/python
@@ -40,12 +46,6 @@ mkdir ~/.pip
 cd ~/.pip
 sudo cp /root/.pip/pip.conf .
 sudo chown mick pip.conf
-```
-
-通过curl命令向系统添加NodeSource存储库，再安装nodejs 12.x及npm
-```shell
-curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
-sudo apt install nodejs npm
 ```
 
 ## 安装虚拟环境，进入虚拟环境
@@ -66,20 +66,22 @@ mkdir /home/mick/data/jupyter
 mkdir /home/mick/data/jupyter/root
 cd /home/mick/data/jupyter
 python -c "import IPython; print(IPython.lib.passwd())"
-输入自定义密码，生成sha1串: sha1:095797e3648e:42a616df6dbf605dc4a80ef1000f0468760db29c
+输入自定义密码，生成sha1串: sha1:57e7657408d7:ee7a0271842fc98a4ad3314ea596ec27e277d00b
 
 jupyter lab --generate-config --allow-root
 
 vi /home/mick/.jupyter/jupyter_notebook_config.py
 	更改项目：
-	c.NotebookApp.ip = '*'
-	c.NotebookApp.allow_root = True
-	c.NotebookApp.open_browser = False
-	c.NotebookApp.port = 8347
-	c.NotebookApp.password = u'sha1:095797e3648e:42a616df6dbf605dc4a80ef1000f0468760db29c'
-	c.ContentsManager.root_dir = '/home/mick/data/jupyter/root'
+	c.ServerApp.ip = '*'
+	c.ServerApp.allow_root = True
+	c.ServerApp.open_browser = False
+	c.ServerApp.port = 8347
+	c.ServerApp.password = u'sha1:57e7657408d7:ee7a0271842fc98a4ad3314ea596ec27e277d00b'
+	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
 ```shell
 jupyter lab build --dev-build=False --minimize=False
 ```
+
+安装ta-lib
