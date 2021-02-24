@@ -121,3 +121,12 @@ jupyter lab build --dev-build=False --minimize=False
 nohup jupyter lab --no-browser &
 ```
 
+## 给 jupyter lab 安装 kite 插件（自动补全代码）
+```shell
+# 先从 kite 官网下载并安装 kite
+bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+
+# 安装好 kite 以后，如果无 error
+python -m pip install jupyter-kite
+jupyter labextension install @kiteco/jupyterlab-kite --dev-build=False --minimize=False
+```
