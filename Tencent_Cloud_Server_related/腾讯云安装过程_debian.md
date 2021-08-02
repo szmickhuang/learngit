@@ -100,7 +100,7 @@ mkdir /home/mick/data/jupyter
 mkdir /home/mick/data/jupyter/root
 cd /home/mick/data/jupyter/root
 python -c "import IPython; print(IPython.lib.passwd())"
-输入自定义密码，生成sha1串: sha1:1345c2bf86f4:01f2100fd4e0ee7e1944d2a9595c7ea937227689
+输入自定义密码，生成sha1串: sha1:69deb70ee561:509ba7f78f637c251c68a09f32e87fa5d19f7785
 
 jupyter lab --generate-config --allow-root
 
@@ -110,7 +110,7 @@ vi /home/mick/.jupyter/jupyter_notebook_config.py
 	c.ServerApp.allow_root = True
 	c.ServerApp.open_browser = False
 	c.ServerApp.port = 8347
-	c.ServerApp.password = u'sha1:1345c2bf86f4:01f2100fd4e0ee7e1944d2a9595c7ea937227689'
+	c.ServerApp.password = u'sha1:69deb70ee561:509ba7f78f637c251c68a09f32e87fa5d19f7785'
 	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
@@ -119,6 +119,25 @@ jupyter lab build --dev-build=False --minimize=False
 
 # 启动时要加上 --no-browser 参数
 nohup jupyter lab --no-browser &
+```
+
+## 安装完import pandas出现lzma出错
+```shell
+apt install -y liblzma-dev
+python -m pip install backports.lzma
+```
+然后得修改 /usr/local/lib/python3.9/lzma.py
+```shell
+vi /usr/local/lib/python3.9/lzma.py
+```
+_lzma那两句import得修改如下：
+```shell
+try:
+    from _lzma import *
+    from _lzma import _encode_filter_properties, _decode_filter_properties
+except ImportError:
+    from backports.lzma import *
+    from backports.lzma import _encode_filter_properties, _decode_filter_properties
 ```
 
 ## 给 jupyter lab 安装 kite 插件（自动补全代码）
