@@ -26,6 +26,11 @@ root ALL=(ALL) ALL
 mick ALL=(ALL) ALL
 ```
 
+安装curl
+```shell
+apt install curl
+```
+
 ## 安装node.js
 
 通过curl命令向系统添加NodeSource存储库，再安装nodejs 14.x及npm
@@ -57,7 +62,33 @@ mkdir ~/.pip
 cd ~/.pip
 sudo cp /root/.pip/pip.conf .
 sudo chown mick pip.conf
+
+# 先下载安装talib
+mkdir /home/mick/temp
+cd /home/mick/temp
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xvf ta-lib-0.4.0-src.tar.gz
+cd ta-lib
+./configure --prefix=/usr
+make
+sudo make install
+
+# 再安装python版本的talib
+cd /home/mick
+mkdir /home/mick/talib_temp
+cd /home/mick/talib_temp
+
+# 这里因为连接github速度太慢，改为用github的镜像 github.com.cnpmjs.org
+git clone https://github.com.cnpmjs.org/mrjbq7/ta-lib.git
+cd ta-lib
+sudo python setup.py install
+
+# reboot后才能生效
+reboot
+
+# 至此，已经把talib库装入系统，但虚拟环境还需重新弄一遍
 ```
+
 
 ## 安装虚拟环境，进入虚拟环境
 ```shell
@@ -69,27 +100,21 @@ source myprojectenv/bin/active
 python -m pip install pip --upgrade
 ```
 
-## 安装ta-lib
+## 在虚拟环境重安装一遍ta-lib
 ```shell
-# 先下载安装talib
-mkdir /home/mick/temp
-cd /home/mick/temp
-wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
-tar -xvf ta-lib-0.4.0-src.tar.gz
-cd ta-lib
+cd /home/mick/temp/ta-lib
 ./configure --prefix=/home/mick/myprojectenv
 make
-make install
+sudo make install
 
 # 再安装python版本的talib
-cd /home/mick
-# 这里因为连接github速度太慢，改为用github的镜像 github.com.cnpmjs.org
-git clone https://github.com.cnpmjs.org/mrjbq7/ta-lib.git
-cd ta-lib
+cd /home/micktalib_temp/ta-lib
 python setup.py install
 
 # reboot后才能生效
 reboot
+
+# 至此，虚拟环境的python也把talib库安装好了
 ```
 
 ## 安装并设置jupyterlab，已进入myprojectenv虚拟环境
@@ -100,7 +125,7 @@ mkdir /home/mick/data/jupyter
 mkdir /home/mick/data/jupyter/root
 cd /home/mick/data/jupyter/root
 python -c "import IPython; print(IPython.lib.passwd())"
-输入自定义密码，生成sha1串: sha1:69deb70ee561:509ba7f78f637c251c68a09f32e87fa5d19f7785
+输入自定义密码，生成sha1串: sha1:ccfd4bb2e2e2:f4633d0980e8c7aa50cc60a23af0342b877388bb
 
 jupyter lab --generate-config --allow-root
 
@@ -110,7 +135,7 @@ vi /home/mick/.jupyter/jupyter_notebook_config.py
 	c.ServerApp.allow_root = True
 	c.ServerApp.open_browser = False
 	c.ServerApp.port = 8347
-	c.ServerApp.password = u'sha1:69deb70ee561:509ba7f78f637c251c68a09f32e87fa5d19f7785'
+	c.ServerApp.password = u'sha1:ccfd4bb2e2e2:f4633d0980e8c7aa50cc60a23af0342b877388bb'
 	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
@@ -121,7 +146,9 @@ jupyter lab build --dev-build=False --minimize=False
 nohup jupyter lab --no-browser &
 ```
 
-## 安装完import pandas出现lzma出错
+
+
+## 安装完如果import pandas出现lzma出错
 ```shell
 apt install -y liblzma-dev
 python -m pip install backports.lzma
