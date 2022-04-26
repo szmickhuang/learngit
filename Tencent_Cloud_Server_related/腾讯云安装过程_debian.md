@@ -47,6 +47,10 @@ apt install nodejs
      echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
      apt update && sudo apt install yarn
 
+# 这里可能需要做一个nodejs的link，link to node
+# node位于/usr/bin
+# ln -s /usr/bin/node /usr/bin/nodejs
+
 nodejs --version
 
 apt install python3-pip
