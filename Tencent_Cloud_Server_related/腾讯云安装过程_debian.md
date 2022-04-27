@@ -106,18 +106,7 @@ python -m pip install pip --upgrade
 
 ## 在虚拟环境重安装一遍ta-lib
 ```shell
-cd /home/mick/temp/ta-lib
-./configure --prefix=/home/mick/myprojectenv
-make
-sudo make install
-
-# 再安装python版本的talib
-cd /home/micktalib_temp/ta-lib
-python setup.py install
-
-# reboot后才能生效
-reboot
-
+python -m pip3 install ta-lib
 # 至此，虚拟环境的python也把talib库安装好了
 ```
 
@@ -128,8 +117,8 @@ mkdir /home/mick/data
 mkdir /home/mick/data/jupyter
 mkdir /home/mick/data/jupyter/root
 cd /home/mick/data/jupyter/root
-python -c "import IPython; print(IPython.lib.passwd())"
-输入自定义密码，生成sha1串: sha1:ccfd4bb2e2e2:f4633d0980e8c7aa50cc60a23af0342b877388bb
+python -c "import jupyter_server.auth; print(jupyter_server.auth.passwd())"
+输入自定义密码，生成sha1串: sha1:argon2:$argon2id$v=19$m=10240,t=10,p=8$pYyXDEc8NE4l8WXsIU3/sQ$ndUaXKJm3Jpuy5Orv/S1hsR9C4LX/Lm+ZZ83wgh493Q
 
 jupyter lab --generate-config --allow-root
 
@@ -139,7 +128,7 @@ vi /home/mick/.jupyter/jupyter_notebook_config.py
 	c.ServerApp.allow_root = True
 	c.ServerApp.open_browser = False
 	c.ServerApp.port = 8347
-	c.ServerApp.password = u'sha1:ccfd4bb2e2e2:f4633d0980e8c7aa50cc60a23af0342b877388bb'
+	c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$pYyXDEc8NE4l8WXsIU3/sQ$ndUaXKJm3Jpuy5Orv/S1hsR9C4LX/Lm+ZZ83wgh493Q'
 	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
