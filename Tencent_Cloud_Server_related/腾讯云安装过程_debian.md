@@ -118,7 +118,7 @@ mkdir /home/mick/data/jupyter
 mkdir /home/mick/data/jupyter/root
 cd /home/mick/data/jupyter/root
 python -c "import jupyter_server.auth; print(jupyter_server.auth.passwd())"
-输入自定义密码，生成sha1串: sha1:argon2:$argon2id$v=19$m=10240,t=10,p=8$pYyXDEc8NE4l8WXsIU3/sQ$ndUaXKJm3Jpuy5Orv/S1hsR9C4LX/Lm+ZZ83wgh493Q
+输入自定义密码，生成sha1串: sha1:argon2:$argon2id$v=19$m=10240,t=10,p=8$ScZ2WP1QFkMg0ZXJg1KGdQ$qYZOTiPZjNmg7MTG5BcZ4ezMT1dMRz5unQZ2LyD1P18sQ$ndUaXKJm3Jpuy5Orv/S1hsR9C4LX/Lm+ZZ83wgh493Q
 
 jupyter lab --generate-config --allow-root
 
@@ -128,7 +128,7 @@ vi /home/mick/.jupyter/jupyter_notebook_config.py
 	c.ServerApp.allow_root = True
 	c.ServerApp.open_browser = False
 	c.ServerApp.port = 8347
-	c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$pYyXDEc8NE4l8WXsIU3/sQ$ndUaXKJm3Jpuy5Orv/S1hsR9C4LX/Lm+ZZ83wgh493Q'
+	c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$ScZ2WP1QFkMg0ZXJg1KGdQ$qYZOTiPZjNmg7MTG5BcZ4ezMT1dMRz5unQZ2LyD1P18'
 	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
@@ -168,4 +168,13 @@ bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
 # 安装好 kite 以后，如果无 error
 python -m pip install jupyter-kite
 jupyter labextension install @kiteco/jupyterlab-kite --dev-build=False --minimize=False
+```
+
+---
+# windows10安装ta-lib
+```shell
+# 从 https://www.lfd.uci.edu/~gohlke/pythonlibs 下载 TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
+# 把 TA_Lib-0.4.24-cp310-cp310-win_amd64.whl 放到 c:\windows\system32
+cd c:\windows\system32
+python -m pip install TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
 ```
