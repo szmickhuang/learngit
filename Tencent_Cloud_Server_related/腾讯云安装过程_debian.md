@@ -118,7 +118,7 @@ mkdir /home/mick/data/jupyter
 mkdir /home/mick/data/jupyter/root
 cd /home/mick/data/jupyter/root
 python -c "import jupyter_server.auth; print(jupyter_server.auth.passwd())"
-输入自定义密码，生成sha1串: sha1:argon2:$argon2id$v=19$m=10240,t=10,p=8$ScZ2WP1QFkMg0ZXJg1KGdQ$qYZOTiPZjNmg7MTG5BcZ4ezMT1dMRz5unQZ2LyD1P18sQ$ndUaXKJm3Jpuy5Orv/S1hsR9C4LX/Lm+ZZ83wgh493Q
+输入自定义密码，生成sha1串: argon2:$argon2id$v=19$m=10240,t=10,p=8$7LhKhOyk5bkN4rRTUI/2Wg$y15hV2H0gvEA4n96Bjf09Oh9BbwDEdsJG1HHq5tSomQ
 
 jupyter lab --generate-config --allow-root
 
@@ -128,7 +128,7 @@ vi /home/mick/.jupyter/jupyter_notebook_config.py
 	c.ServerApp.allow_root = True
 	c.ServerApp.open_browser = False
 	c.ServerApp.port = 8347
-	c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$ScZ2WP1QFkMg0ZXJg1KGdQ$qYZOTiPZjNmg7MTG5BcZ4ezMT1dMRz5unQZ2LyD1P18'
+	c.ServerApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$7LhKhOyk5bkN4rRTUI/2Wg$y15hV2H0gvEA4n96Bjf09Oh9BbwDEdsJG1HHq5tSomQ'
 	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
