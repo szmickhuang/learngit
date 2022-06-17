@@ -9,7 +9,7 @@ sudo apt install wget build-essential libncursesw5-dev libssl-dev libsqlite3-dev
 可以前往Python官网获取最新源码
 ```shell
 cd ~
-wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
+wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
 ```
 
 ### 2. 解压Python源码
