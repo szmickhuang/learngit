@@ -132,7 +132,7 @@ vi /home/mick/.jupyter/jupyter_notebook_config.py
 	c.ServerApp.root_dir = '/home/mick/data/jupyter/root'
 ```
 
-如果是在aws上ec2安装，记得把安全组策略的入站规则，加入8347端口
+如果是在aws或ucloud的云服务器上安装，记得把安全组策略的入站规则，加入8347端口
 
 ```shell
 jupyter lab build --dev-build=False --minimize=False
