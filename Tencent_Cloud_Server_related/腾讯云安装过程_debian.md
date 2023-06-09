@@ -33,10 +33,10 @@ apt install curl
 
 ## 安装node.js
 
-通过curl命令向系统添加NodeSource存储库，再安装nodejs 14.x及npm
+通过curl命令向系统添加NodeSource存储库，再安装nodejs 20.x及npm
 ```shell
 # nodejs 可以自动带入虚拟环境
-curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
 apt install nodejs
 
 ## Run `apt install -y nodejs` to install Node.js 14.x and npm
@@ -162,6 +162,7 @@ except ImportError:
     from backports.lzma import _encode_filter_properties, _decode_filter_properties
 ```
 
+# 注意：安装kite插件总是出错，暂时不建议安装
 ## 给 jupyter lab 安装 kite 插件（自动补全代码）
 ```shell
 # 先从 kite 官网下载并安装 kite
