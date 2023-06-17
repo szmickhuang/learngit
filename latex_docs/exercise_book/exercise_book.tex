@@ -1,0 +1,51 @@
+\documentclass[answer,fontset=windows]{exam}
+% \documentcalss{exam}
+
+\usepackage{xeCJK}          % 中文
+\usepackage{zhnumber}       % 中文题号
+\usepackage{graphicx}       % 插入图片
+\usepackage{hyperref}       % 插入链接
+\usepackage{amsmath}        % 数学符号
+\usepackage{booktabs}       % 表格
+
+% 定义页眉和页脚
+\pagestyle{headandfoot}
+\firstpageheadrule
+\firstpageheader{测试用试卷}{概率论与数理统计}{习题}
+\runningheader{测试用的试卷}
+{概率论与数理统计}
+{习题}
+\runningheadrule
+\firstpagefooter{}{第 \thepage\ 页 (共 \numpages 页)}{}
+\runningfooter{}{第 \thepage\ 页 (共 \numpages 页)}{}
+
+% 定义题的分数样式
+\pointname{  分}
+\pointformat{ (\thepoints)}
+
+% 定义解、答样式
+\renewcommand{\solutiontitle}{\noindent\textbf{答： }}
+% \renewcommand{\solutiontitle}{\noindent\textbf{解： }\par\noindent}
+
+% 定义题号
+\renewcommand{\thequestion}{\arabic{question}}
+\renewcommand{\questionlabel}{\thequestion .}
+\renewcommand{\thepartno}{\arabic{partno}}
+\renewcommand{\partlabel}{ (\thepartno) }
+\renewcommand{\thesubpart}{}
+\renewcommand{\subpartlabel}{\thesubpart.}
+\renewcommand{\thesubsubpart}{}
+\renewcommand{\subsubpartlabel}{\thesubsubpart)}
+%\renewcommand{\thechoice}
+%\renewcommand{\choicelabel}{\thechoice.}
+% \arabic \alph \Alph \roman \Roman \greeknum
+
+\begin{document}
+\begin{questions}
+    \question[10] 为什么天空是蓝色的？
+    \begin{solution}
+        因为空气散射阳光产生色散。
+    \end{solution}
+
+\end{questions}
+\end{document}

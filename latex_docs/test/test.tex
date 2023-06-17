@@ -1,0 +1,266 @@
+\documentclass[lang=cn,newtx,10pt,scheme=chinese]{elegantbook}
+
+\usepackage{xpatch}
+
+\ExplSyntaxOn
+    \xpatchcmd\__xeCJK_check_family:n{\__xeCJK_warning:nxx}{\__xeCJK_info:nxx}{}{}
+\ExplSyntaxOff
+
+% 全局设置
+% 中文默认字体：宋体，
+\setCJKmainfont{FandolSong}
+
+\title{概率论与数理统计习题}
+\subtitle{茆诗松版}
+
+\author{Mick Huang}
+
+\setcounter{tocdepth}{3}
+
+\cover{cover.jpg}
+
+% 本文档命令
+\usepackage{array}
+\usepackage{framed}
+\usepackage{mathrsfs}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+% 修改标题页的橙色带
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+\usepackage{cprotect}
+
+\addbibresource[location=local]{reference.bib} % 参考文献，不要删除
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{随机事件与概率}
+\section{随机事件及其运算}
+
+\begin{theorem}[事件运算性质]
+    1.\ 交换律：
+    \begin{equation}
+        A \cup B = B \cup A
+    \end{equation}
+    \begin{equation}
+        AB = BA
+    \end{equation}
+    2.\ 结合律
+    \begin{equation}
+        (A \cup B) \cup C = A \cup (B \cup C)
+    \end{equation}
+    \begin{equation}
+        (AB)C = A(BC)
+    \end{equation}
+    3.\ 分配律：
+    \begin{equation}
+        (A \cup B) \cap C = AC \cup BC
+    \end{equation}
+    \begin{equation}
+        (A \cap B) \cup C = (A \cup C) \cap (B \cup C)
+    \end{equation}
+    4.\ 对偶律（德摩根公式）：
+    \begin{equation}
+        \overline{A \cup B} = \bar{A} \cap \bar{B}
+    \end{equation}
+    \begin{equation}
+        \overline{A \cap B} = \bar{A} \cup \bar{B}
+    \end{equation}
+    \begin{equation}
+        \overline{\bigcup_{i=1}^{n}A_i} = \bigcap_{i=1}^{n}{\bar{A_i}}
+    \end{equation}
+    \begin{equation}
+        \overline{\bigcup_{i=1}^{\infty}A_i} = \bigcap_{i=1}^{\infty}{\bar{A_i}}
+    \end{equation}
+    \begin{equation}
+        \overline{\bigcap_{i=1}^{n}A_i} = \bigcup_{i=1}^{n}{\bar{A_i}}
+    \end{equation}
+    \begin{equation}
+        \overline{\bigcap_{i=1}^{\infty}A_i} = \bigcup_{i=1}^{\infty}{\bar{A_i}}
+    \end{equation}
+    5.\ 差公式：
+    \begin{equation}
+        A-B=A\bar{B}
+    \end{equation}
+\end{theorem}
+\newpage
+
+\begin{problemset}[习题 1.1]
+    \item 写出下列随机试验的样本空间：
+    \item[(1)]抛三枚硬币；
+    \item[(2)]抛三枚骰子；
+    \item[(3)]连续抛一枚硬币，直至出现正面为止；
+    \item[(4)]口袋中有黑、白、红球各一，从中任取2个球，先从中取1，放回去后再取1；
+    \item[(5)]口袋中有黑、白、红球各一，从中任取2个球，先从中取1，不放回再取1。
+    \begin{solution}
+    \begin{framed}
+        \item[(1)] $\Omega=\left\{ZZZ,ZZF,ZFZ,ZFF,FZZ,FZF,FFZ,FFF\right\}$
+        \item[(2)] $\Omega=\left\{x,y,z \in (1,2,3,4,5,6)\ |\ (x,y,z)\right\}$ 
+        \item[(3)] $\Omega=\left\{(Z),(F,Z),(F,F,Z),...,(F,F,F,...,F,Z)\right\}$
+        \item[(4)] $\Omega=\left\{(B,B),(B,W),(B,R),(W,B),(W,W),(W,R),(R,B),(R,W),(R,R)\right\}$
+        \item[(5)] $\Omega=\left\{(B,W),(B,R),(W,B),(W,R),(R,B),(R,W)\right\}$
+    \end{framed}
+    \end{solution}
+
+    \item 先抛一枚硬币，若出现正面（记为$Z$），则再掷一枚骰子，试验停止；若出现反面（记为$F$），则再抛一次硬币，试验停止。那么，该试验的样本空间$\Omega$是什么？
+    \begin{solution}
+        \begin{framed}
+            $\Omega=\left\{X \in (0,1,2,3,4,5,6)\ |\ (Z,X),(F,F),(F,Z)\right\}$
+        \end{framed}
+    \end{solution}
+
+    \item 设$A,B,C$为三事件，试表示下列事件：
+    \item[(1)] $A,B,C$都发生或都不发生；
+    \item[(2)] $A,B,C$中不多于一个发生：
+    \item[(3)] $A,B,C$中不多于两个发生；
+    \item[(4)] $A,B,C$中至少有两个发生。
+    \begin{solution}
+        \begin{framed}
+            \item[(1)] $ABC \cup \bar{A}\bar{B}\bar{C}$
+            \item[(2)] $\bar{A}BC \cup A\bar{B}C \cup AB\bar{C} \cup \bar{A}\bar{B}\bar{C}$ 
+            \item[(3)] $\overline{ABC}$
+            \item[(4)] $ABC \cup \bar{A}\bar{B}\bar{C}$
+        \end{framed}
+    \end{solution}
+
+    \item 指出下列事件等式成立的条件。
+    \item[1] $A \cup B = A$；
+    \item[2] $AB=A$。
+    \begin{solution}
+        \begin{framed}
+            \item[1] $B \subset A$
+            \item[2] $A \subset B$
+        \end{framed}
+    \end{solution}
+    \newpage
+
+    \item 设$X$为随机变量，其样本空间为$\Omega=\left\{0 \leq X \leq 2\right\}$，记事件$A=\left\{0.5 < X \leq 1\right\}$，$B=\left\{0.25 \leq X < 1.5\right\}$，写出下列各事件：
+    \item[(1)] $\bar{A}B$;
+    \item[(2)] $\bar{A} \cup B$;
+    \item[(3)] $\overline{AB}$;
+    \item[(4)] $\overline{A \cup B}$
+    \begin{solution}
+        \begin{framed}
+            \item[(1)] $\bar A = \left\{0 \leq X \leq 0.5\right\} \cup \left\{ 1 < X \leq 2\right\} \Rightarrow \bar{A}B=\left\{0.25 \leq X 0.5\right\} \cup \left\{ 1 < X < 1.5\right\}$
+            \item[(2)] $\bar{A} \cup B = \Omega$
+            \item[(3)] $AB = A \Rightarrow \overline{AB} = \bar{A} = \left\{0 \leq X \leq 0.5\right\} \cup \left\{ 1 < X \leq 2\right\}$
+            \item[(4)] $\overline{A \cup B}=\bar{B}=\left\{0 \leq X < 0.25\right\} \cup \left\{1.5 \leq X \leq 2\right\}$
+        \end{framed}
+    \end{solution}
+
+    \item  检查三件产品，只区分每件产品是合格品(记为0)与不合格品(记为1)，设$X$为三件产品中的不合格品数，指出下列事件所含的样本点：\\
+    $A=``X=1",\ B=``X>2",\ C=``X=0",\ D=``X=4"$.
+    \begin{solution}
+        \begin{framed}
+            $A=\left\{(1,0,0),(0,1,0),(0,0,1)\right\}\\
+            B=\left\{(1,1,1)\right\}\\
+            C=\left\{(0,0,0)\right\}\\
+            D=\emptyset$
+        \end{framed}
+    \end{solution}
+
+    \item 试问下列命题是否成立？
+    \item[(1)] $A-(B-C)=(A-B)\cup C$
+    \item[(2)] 若 $AB=\emptyset$且$C \subset A$，则$BC=\emptyset$
+    \item[(3)] $(A \cup B)-B=A$
+    \item[(4)] $(A-B)\cup B=A$
+    \begin{solution}
+        \begin{framed}
+            \item[(1)] $A-(B-C)=A-B\bar{C}=A\overline{B\bar{C}}=A(\bar{B}\cup C)=A\bar{B} \cup AC=(A-B) \cup AC \neq (A-B) \cup C$\quad 不成立
+            \item[(2)] 成立
+            \item[(3)] $(A \cup B)-B=(A \cup B)\bar{B}=A \bar{B} \cup B \bar{B} = A \bar{B} \neq A$\quad 不成立
+            \item[(4)] $(A-B)\cup B=(A \bar{B}) \cup B = (A \cup B) \cap (\bar{B} \cup B)=A \cup B \neq A$\quad 不成立
+        \end{framed}
+    \end{solution}
+
+    \item 若事件$ABC=\emptyset$，是否一定有$AB=\emptyset$？
+    \begin{solution}
+        \begin{framed}
+            不一定，有可能$AB \neq \emptyset$但$AB \cap C = \emptyset$；或者$A、B、C$两两互不相交。
+        \end{framed}
+    \end{solution}
+    \newpage
+
+    \item 请叙述下列事件的对立事件：
+    \item[(1)] $A=$\ ``\ 掷两枚硬币，皆为正面\ ''\ ；
+    \item[(2)] $B=$\ ``\ 射击三次，皆命中目标\ ''\ ；
+    \item[(3)] $A=$\ ``\ 加工四个零件，至少有一个合格品\ ''\ 。
+    \begin{solution}
+        \begin{framed}
+            \item[(1)] $\bar A=$\ ``\ 掷两枚硬币，最多只有一枚为正面\ ''\ ；
+            \item[(2)] $\bar B=$\ ``\ 射击三次，没有全部命中目标\ ''\ ；
+            \item[(3)] $\bar C=$\ ``\ 加工四个零件，全部是不合格品\ ''\ 。
+        \end{framed}
+    \end{solution}
+
+    \item 证明下列事件的运算公式：
+    \item[(1)] $A=AB \cup A\bar{B}$
+    \item[(2)] $A \cup B = A \cup \bar{A}B$
+    \begin{proof}
+        \begin{framed}
+            \item[(1)] $AB \cup A\bar{B}=A(B \cup \bar{B}) = A$
+            \item[(2)] $A \cup B=A\cup BA \cup B\bar{A} = A \cup \bar{A}B$
+        \end{framed}
+    \end{proof}
+
+    \item 设$\mathscr{F}$为一事件域，若$A_n \in \mathscr{F}\ , n=1,2,...$，试证：
+    \item[(1)] $\emptyset \in \mathscr{F}$；
+    \item[(2)] 有限并$\bigcup\limits_{i=1}^{n}{A_i} \in \mathscr{F}, n \geq 1$；
+    \item[(3)] 有限交$\bigcap\limits_{i=1}^{n}{A_i} \in \mathscr{F}, n \geq 1$；
+    \item[(4)] 可列交$\bigcap\limits_{i=1}^{\infty}{A_i} \in \mathscr{F}$；
+    \item[(5)] 差运算$A_1 - A_2 \in \mathscr{F}$。
+    \begin{proof}
+        \begin{framed}
+            \item[(1)] 因为$\mathscr{F}$为一事件域，所以$\Omega \in \mathscr{F}$，故其对立事件$\bar{\Omega}=\emptyset \in \mathscr{F}$
+            \item[(2)] 因为$A_n \in \mathscr{F}$，所以任一事件满足$X \in \bigcup\limits_{i=1}^{n} \in \mathscr{F}$
+            \item[(3)] 因为$A_i \in \mathscr{F}$，所以$\bar{A_i} \in \mathscr{F}$，$\bigcap\limits_{i=1}^{n}A_i = \overline{\bigcup\limits_{i=1}^n{\bar{A_i}}} \in \mathscr{F} \Rightarrow \bigcap\limits_{i=1}^{n}{A_i} \in \mathscr{F}$
+            \item[(4)] 因为$A_i \in \mathscr{F}$，所以$\bar{A_i} \in \mathscr{F}$，$\bigcap\limits_{i=1}^{\infty}A_i = \overline{\bigcup\limits_{i=1}^\infty{\bar{A_i}}} \in \mathscr{F} \Rightarrow \bigcap\limits_{i=1}^{\infty}{A_i} \in \mathscr{F}$
+            \item[(5)] 因为$A_2 \in \mathscr{F}$，所以$\bar{A_2} \in \mathscr{F}$，由(3)（有限交）得$A_1-A_2=A_1 \cap \bar{A_2} \in \mathscr{F}$。
+        \end{framed}
+    \end{proof}
+\end{problemset}
+\newpage
+
+\section{概率得定义及其确定方法}
+\begin{axiom}[概率三公理]
+    设 $\Omega$ 为一个样本空间。$\mathscr{F}$为$\Omega$得某些子集组成的一个事件域。如果对任一事件$A \in \mathscr{F}$，定义在$\mathscr{F}$上的一个实值函数$P(A)$满足：\newline
+    (1)\ 非负性公理\qquad \quad 如果$ A \in \mathscr{F}$,\ 那么$P(A) \ge 0$。\newline
+    (2)\ 正则性公理\qquad \quad $P(\Omega)=1$ \newline
+    (3)\ 可列可加性公理\quad 如果$A_1,A_2,...,A_n,...$互不相容，那么:\newline
+    $$P(\bigcup_{i=1}^{\infty}A_i)=\sum_{i=1}^{\infty}{P(A_i)}$$
+    则称$P(A)$为事件$A$得概率，称三元素（$\Omega,\ \mathscr{F},\ P$）为概率空间。
+\end{axiom}
+
+\begin{problemset}[习题 1.2]
+    \item 对于组合数$\dbinom{n}{r}$，证明：\vspace{6pt}
+    \item[(1)] $\dbinom{n}{r} = \dbinom{n}{n-r}$;\vspace{6pt}
+    \item[(2)] $\dbinom{n}{r} = \dbinom{n-1}{r-1}+\dbinom{n-1}{r}$;\vspace{6pt}
+    \item[(3)] $\dbinom{n}{0} + \dbinom{n}{1} + ... \dbinom{n}{n} = 2^n$;\vspace{6pt}
+    \item[(4)] $\dbinom{n}{1} + 2\dbinom{n}{2} + ... + n\dbinom{n}{n} = n2^{n-1}$;\vspace{6pt}
+    \item[(5)] $\dbinom{a}{0} \dbinom{b}{n} + \dbinom{a}{1} \dbinom{b}{n-1} + ... + \dbinom{a}{n} \dbinom{b}{0} = \dbinom{a+b}{n},\quad n=min(a,b)$;\vspace{6pt}
+    \item[(6)] $\dbinom{n}{0}^2 + \dbinom{n}{1}^2 + ... + \dbinom{n}{n}^2 = \dbinom{2n}{n}^2$.\vspace{6pt}
+    \vspace{6pt}
+    \begin{proof}
+        \begin{framed}
+            \item[(1)] $\dbinom{n}{r} = \dfrac{\frac{n!}{(n-r)!}}{r!} = \dfrac{n!}{r! \cdot (n-r)!}$\vspace{6pt}\\
+            \item[] $\dbinom{n}{n-r} = \dfrac{n!}{(n-r)! \cdot [n-(n-r)]!} = \dfrac{n!}{(n-r)! \cdot r!} = \dbinom{n}{r}$\vspace{6pt}
+            \item[(2)] $\dbinom{n-1}{r-1}=\dfrac{(n-1)!}{(r-1)! \cdot [n-1-(r-1)]!}=\dfrac{(n-1)!}{(r-1)! \cdot (n-r)!}$\vspace{6pt}\\
+            \item[] $\dbinom{n-1}{r}=\dfrac{(n-1)!}{r! \cdot (n-1-r)!}$\vspace{6pt}\\
+            \item[] $\dbinom{n-1}{r-1}+\dbinom{n-1}{r}=\cdot \left[\dfrac{(n-1)! \cdot r}{r! \cdot (n-r)!}+\dfrac{(n-1)! \cdot (n-r)}{r! \cdot (n-r)!}\right]=\dfrac{(n-1)! \cdot n}{r! \cdot (n-r)!} = \dfrac{n!}{r! \cdot (n-r)!} =\dbinom{n}{r}$\vspace{6pt}
+            \item[(3)] 由(1)易得：$\dbinom{n}{0} = \dbinom{n}{n}, \dbinom{n}{1} = \dbinom{n}{n-1}, ...$\vspace{6pt}\\
+            \item[] $\dbinom{n}{0} + \dbinom{n}{1} + ... \dbinom{n}{n}$\vspace{6pt}
+            \item[(4)] $ $\vspace{6pt}
+            \item[(5)] $ $\vspace{6pt}
+            \item[(6)] $ $\vspace{6pt}
+        \end{framed}
+    \end{proof}
+\end{problemset}
+
+\end{document}
