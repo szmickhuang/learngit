@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.12)  17 JUN 2023 11:06
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.12)  17 JUN 2023 16:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1619,13 +1619,12 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
-No file test.aux.
+ (./test.aux)
 \openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 35.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 35.
-(d:/texlive/2023/texmf-dist/tex/latex/newtx/omlntxmi.fd
+ (d:/texlive/2023/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -1664,12 +1663,10 @@ File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 35.
 Package hyperref Info: Link coloring ON on input line 35.
+ (./test.out) (./test.out)
 \@outlinefile=\write8
 \openout8 = `test.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1820,12 +1817,11 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 17.28pt on input line 40.
-
-No file test.toc.
+ (./test.toc)
 \tf@toc=\write9
 \openout9 = `test.toc'.
 
-[1
+ [1
 
 
 
@@ -1848,54 +1844,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--237
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-
+Overfull \vbox (1.3329pt too high) detected at line 265
  []
 
 [5] [6] (./test.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `test.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `test.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  DF7F43C3FD793912669463BF62B22CC4;570.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                test
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `test.out' has not changed.
+(rerunfilecheck)             Checksum: DF7F43C3FD793912669463BF62B22CC4;570.
 Package logreq Info: Writing requests to 'test.run.xml'.
 \openout1 = `test.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48538 strings out of 476683
- 1020492 string characters out of 5807575
- 1967129 words of memory out of 5000000
- 67907 multiletter control sequences out of 15000+600000
+ 48536 strings out of 476683
+ 1019825 string characters out of 5807575
+ 1972057 words of memory out of 5000000
+ 67897 multiletter control sequences out of 15000+600000
  529268 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,11n,136p,673b,1324s stack positions out of 10000i,1000n,20000p,200000b,200000s

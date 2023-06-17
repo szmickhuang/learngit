@@ -249,14 +249,17 @@
     \vspace{6pt}
     \begin{proof}
         \begin{framed}
-            \item[(1)] $\dbinom{n}{r} = \dfrac{\frac{n!}{(n-r)!}}{r!} = \dfrac{n!}{r! \cdot (n-r)!}$\vspace{6pt}\\
+            \item[(1)] $\dbinom{n}{r} = \dfrac{\dfrac{n!}{(n-r)!}}{r!} = \dfrac{n!}{r! \cdot (n-r)!}$\vspace{6pt}
             \item[] $\dbinom{n}{n-r} = \dfrac{n!}{(n-r)! \cdot [n-(n-r)]!} = \dfrac{n!}{(n-r)! \cdot r!} = \dbinom{n}{r}$\vspace{6pt}
-            \item[(2)] $\dbinom{n-1}{r-1}=\dfrac{(n-1)!}{(r-1)! \cdot [n-1-(r-1)]!}=\dfrac{(n-1)!}{(r-1)! \cdot (n-r)!}$\vspace{6pt}\\
-            \item[] $\dbinom{n-1}{r}=\dfrac{(n-1)!}{r! \cdot (n-1-r)!}$\vspace{6pt}\\
+            \item[(2)] $\dbinom{n-1}{r-1}=\dfrac{(n-1)!}{(r-1)! \cdot [n-1-(r-1)]!}=\dfrac{(n-1)!}{(r-1)! \cdot (n-r)!}$\vspace{6pt}
+            \item[] $\dbinom{n-1}{r}=\dfrac{(n-1)!}{r! \cdot (n-1-r)!}$\vspace{6pt}
             \item[] $\dbinom{n-1}{r-1}+\dbinom{n-1}{r}=\cdot \left[\dfrac{(n-1)! \cdot r}{r! \cdot (n-r)!}+\dfrac{(n-1)! \cdot (n-r)}{r! \cdot (n-r)!}\right]=\dfrac{(n-1)! \cdot n}{r! \cdot (n-r)!} = \dfrac{n!}{r! \cdot (n-r)!} =\dbinom{n}{r}$\vspace{6pt}
-            \item[(3)] 由(1)易得：$\dbinom{n}{0} = \dbinom{n}{n}, \dbinom{n}{1} = \dbinom{n}{n-1}, ...$\vspace{6pt}\\
-            \item[] $\dbinom{n}{0} + \dbinom{n}{1} + ... \dbinom{n}{n}$\vspace{6pt}
-            \item[(4)] $ $\vspace{6pt}
+            \item[(3)] 由二项式定理$(a+b)^n=\sum\limits_{i=0}^{n}{\dbinom{n}{i}a^{n-i}b^{i}}$\vspace{6pt}
+            \item[] 令$a=1,\ b=1 \Rightarrow 2^n=(1+1)^n = \sum\limits_{i=0}^{n} \dbinom{n}{i}1^{n-i}1^{i} = \dbinom{n}{0}+\dbinom{n}{1}+...+\dbinom{n}{n}$ \vspace{6pt}
+            \item[(4)] $\dbinom{n}{r} = \dfrac{n!}{r! \cdot (n-r)!}=\dfrac{n \cdot (n-1)!}{r \cdot (r-1)! \cdot [(n-1)-(r-1)]!} = \dfrac{n}{r} \cdot \dfrac{(n-1)!}{(r-1)! \cdot [(n-1)-(r-1)]!} $\vspace{6pt}
+            \item[] $r\dbinom{n}{r} = r \cdot \dfrac{n}{r} \cdot \dfrac{(n-1)!}{(r-1)! \cdot [(n-1)-(r-1)]!} = n\dbinom{n-1}{r-1}$\vspace{6pt}
+            \item[] $\dbinom{n}{1} + 2\dbinom{n}{2} + ... + n\dbinom{n}{n} = n2^{n-1} = n \cdot \dbinom{n-1}{1-1} + n \cdot \dbinom{n-1}{2-1} + ... + n \cdot \dbinom{n-1}{n-1} = n \cdot \sum\limits_{i=0}^{n-1}\dbinom{n-1}{i}$\vspace{6pt}
+            \item[] 根据(3)，$n\sum\limits_{i=0}^{n-1}\dbinom{n-1}{i}=n2^{n-1}$\vspace{6pt}
             \item[(5)] $ $\vspace{6pt}
             \item[(6)] $ $\vspace{6pt}
         \end{framed}
