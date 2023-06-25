@@ -1,0 +1,220 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}First Principles}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Examples}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}Excessive Elaborations}{2}{}%
+\contentsline {subsection}{\numberline {1.1.3}Long Winded Conclusion}{3}{}%
+\contentsline {subsection}{\numberline {1.1.4}Exercises}{3}{}%
+\contentsline {section}{\numberline {1.2}Theory vs Practice}{4}{}%
+\contentsline {subsection}{\numberline {1.2.1}Examples}{4}{}%
+\contentsline {subsection}{\numberline {1.2.2}Excessive Elaborations}{5}{}%
+\contentsline {subsection}{\numberline {1.2.3}Long Winded Conclusion}{5}{}%
+\contentsline {subsection}{\numberline {1.2.4}Exercises}{6}{}%
+\contentsline {chapter}{\numberline {2}Theory of Numbers}{7}{}%
+\contentsline {section}{\numberline {2.1}First Principles}{7}{}%
+\contentsline {subsection}{\numberline {2.1.1}Examples}{8}{}%
+\contentsline {subsection}{\numberline {2.1.2}Excessive Elaborations}{8}{}%
+\contentsline {subsection}{\numberline {2.1.3}Long Winded Conclusion}{9}{}%
+\contentsline {subsection}{\numberline {2.1.4}Exercises}{9}{}%
+\contentsline {section}{\numberline {2.2}Theory vs Practice}{10}{}%
+\contentsline {subsection}{\numberline {2.2.1}Examples}{10}{}%
+\contentsline {subsection}{\numberline {2.2.2}Excessive Elaborations}{11}{}%
+\contentsline {subsection}{\numberline {2.2.3}Long Winded Conclusion}{12}{}%
+\contentsline {subsection}{\numberline {2.2.4}Exercises}{12}{}%
+\contentsline {chapter}{\numberline {3}Irrational and Transcendent Numbers}{13}{}%
+\contentsline {section}{\numberline {3.1}First Principles}{13}{}%
+\contentsline {subsection}{\numberline {3.1.1}Examples}{14}{}%
+\contentsline {subsection}{\numberline {3.1.2}Excessive Elaborations}{14}{}%
+\contentsline {subsection}{\numberline {3.1.3}Long Winded Conclusion}{15}{}%
+\contentsline {subsection}{\numberline {3.1.4}Exercises}{15}{}%
+\contentsline {section}{\numberline {3.2}Theory vs Practice}{16}{}%
+\contentsline {subsection}{\numberline {3.2.1}Examples}{17}{}%
+\contentsline {subsection}{\numberline {3.2.2}Excessive Elaborations}{17}{}%
+\contentsline {subsection}{\numberline {3.2.3}Long Winded Conclusion}{18}{}%
+\contentsline {subsection}{\numberline {3.2.4}Exercises}{18}{}%
+\contentsline {chapter}{\numberline {4}Complex Numbers}{19}{}%
+\contentsline {section}{\numberline {4.1}First Principles}{19}{}%
+\contentsline {subsection}{\numberline {4.1.1}Examples}{20}{}%
+\contentsline {subsection}{\numberline {4.1.2}Excessive Elaborations}{20}{}%
+\contentsline {subsection}{\numberline {4.1.3}Long Winded Conclusion}{21}{}%
+\contentsline {subsection}{\numberline {4.1.4}Exercises}{21}{}%
+\contentsline {section}{\numberline {4.2}Theory vs Practice}{22}{}%
+\contentsline {subsection}{\numberline {4.2.1}Examples}{22}{}%
+\contentsline {subsection}{\numberline {4.2.2}Excessive Elaborations}{23}{}%
+\contentsline {subsection}{\numberline {4.2.3}Long Winded Conclusion}{23}{}%
+\contentsline {subsection}{\numberline {4.2.4}Exercises}{24}{}%
+\contentsline {chapter}{\numberline {5}Quaternions and Ausdehnungslehre}{25}{}%
+\contentsline {section}{\numberline {5.1}First Principles}{25}{}%
+\contentsline {subsection}{\numberline {5.1.1}Examples}{26}{}%
+\contentsline {subsection}{\numberline {5.1.2}Excessive Elaborations}{26}{}%
+\contentsline {subsection}{\numberline {5.1.3}Long Winded Conclusion}{27}{}%
+\contentsline {subsection}{\numberline {5.1.4}Exercises}{27}{}%
+\contentsline {section}{\numberline {5.2}Theory vs Practice}{28}{}%
+\contentsline {subsection}{\numberline {5.2.1}Examples}{29}{}%
+\contentsline {subsection}{\numberline {5.2.2}Excessive Elaborations}{29}{}%
+\contentsline {subsection}{\numberline {5.2.3}Long Winded Conclusion}{30}{}%
+\contentsline {subsection}{\numberline {5.2.4}Exercises}{30}{}%
+\contentsline {chapter}{\numberline {6}Theory of Equations}{31}{}%
+\contentsline {section}{\numberline {6.1}First Principles}{31}{}%
+\contentsline {subsection}{\numberline {6.1.1}Examples}{32}{}%
+\contentsline {subsection}{\numberline {6.1.2}Excessive Elaborations}{32}{}%
+\contentsline {subsection}{\numberline {6.1.3}Long Winded Conclusion}{33}{}%
+\contentsline {subsection}{\numberline {6.1.4}Exercises}{33}{}%
+\contentsline {section}{\numberline {6.2}Theory vs Practice}{34}{}%
+\contentsline {subsection}{\numberline {6.2.1}Examples}{34}{}%
+\contentsline {subsection}{\numberline {6.2.2}Excessive Elaborations}{35}{}%
+\contentsline {subsection}{\numberline {6.2.3}Long Winded Conclusion}{36}{}%
+\contentsline {subsection}{\numberline {6.2.4}Exercises}{36}{}%
+\contentsline {chapter}{\numberline {7}Substitutions and Groups}{37}{}%
+\contentsline {section}{\numberline {7.1}First Principles}{37}{}%
+\contentsline {subsection}{\numberline {7.1.1}Examples}{38}{}%
+\contentsline {subsection}{\numberline {7.1.2}Excessive Elaborations}{38}{}%
+\contentsline {subsection}{\numberline {7.1.3}Long Winded Conclusion}{39}{}%
+\contentsline {subsection}{\numberline {7.1.4}Exercises}{39}{}%
+\contentsline {section}{\numberline {7.2}Theory vs Practice}{40}{}%
+\contentsline {subsection}{\numberline {7.2.1}Examples}{40}{}%
+\contentsline {subsection}{\numberline {7.2.2}Excessive Elaborations}{41}{}%
+\contentsline {subsection}{\numberline {7.2.3}Long Winded Conclusion}{41}{}%
+\contentsline {subsection}{\numberline {7.2.4}Exercises}{42}{}%
+\contentsline {chapter}{\numberline {8}Determinants}{43}{}%
+\contentsline {section}{\numberline {8.1}First Principles}{43}{}%
+\contentsline {subsection}{\numberline {8.1.1}Examples}{44}{}%
+\contentsline {subsection}{\numberline {8.1.2}Excessive Elaborations}{44}{}%
+\contentsline {subsection}{\numberline {8.1.3}Long Winded Conclusion}{45}{}%
+\contentsline {subsection}{\numberline {8.1.4}Exercises}{45}{}%
+\contentsline {section}{\numberline {8.2}Theory vs Practice}{46}{}%
+\contentsline {subsection}{\numberline {8.2.1}Examples}{46}{}%
+\contentsline {subsection}{\numberline {8.2.2}Excessive Elaborations}{47}{}%
+\contentsline {subsection}{\numberline {8.2.3}Long Winded Conclusion}{47}{}%
+\contentsline {subsection}{\numberline {8.2.4}Exercises}{48}{}%
+\contentsline {chapter}{\numberline {9}Quantics}{49}{}%
+\contentsline {section}{\numberline {9.1}First Principles}{49}{}%
+\contentsline {subsection}{\numberline {9.1.1}Examples}{50}{}%
+\contentsline {subsection}{\numberline {9.1.2}Excessive Elaborations}{50}{}%
+\contentsline {subsection}{\numberline {9.1.3}Long Winded Conclusion}{51}{}%
+\contentsline {subsection}{\numberline {9.1.4}Exercises}{51}{}%
+\contentsline {section}{\numberline {9.2}Theory vs Practice}{52}{}%
+\contentsline {subsection}{\numberline {9.2.1}Examples}{52}{}%
+\contentsline {subsection}{\numberline {9.2.2}Excessive Elaborations}{53}{}%
+\contentsline {subsection}{\numberline {9.2.3}Long Winded Conclusion}{53}{}%
+\contentsline {subsection}{\numberline {9.2.4}Exercises}{54}{}%
+\contentsline {chapter}{\numberline {10}Calculus}{55}{}%
+\contentsline {section}{\numberline {10.1}First Principles}{55}{}%
+\contentsline {subsection}{\numberline {10.1.1}Examples}{56}{}%
+\contentsline {subsection}{\numberline {10.1.2}Excessive Elaborations}{56}{}%
+\contentsline {subsection}{\numberline {10.1.3}Long Winded Conclusion}{57}{}%
+\contentsline {subsection}{\numberline {10.1.4}Exercises}{57}{}%
+\contentsline {section}{\numberline {10.2}Theory vs Practice}{58}{}%
+\contentsline {subsection}{\numberline {10.2.1}Examples}{58}{}%
+\contentsline {subsection}{\numberline {10.2.2}Excessive Elaborations}{59}{}%
+\contentsline {subsection}{\numberline {10.2.3}Long Winded Conclusion}{59}{}%
+\contentsline {subsection}{\numberline {10.2.4}Exercises}{60}{}%
+\contentsline {chapter}{\numberline {11}Differential Equations}{61}{}%
+\contentsline {section}{\numberline {11.1}First Principles}{61}{}%
+\contentsline {subsection}{\numberline {11.1.1}Examples}{62}{}%
+\contentsline {subsection}{\numberline {11.1.2}Excessive Elaborations}{62}{}%
+\contentsline {subsection}{\numberline {11.1.3}Long Winded Conclusion}{63}{}%
+\contentsline {subsection}{\numberline {11.1.4}Exercises}{63}{}%
+\contentsline {section}{\numberline {11.2}Theory vs Practice}{64}{}%
+\contentsline {subsection}{\numberline {11.2.1}Examples}{64}{}%
+\contentsline {subsection}{\numberline {11.2.2}Excessive Elaborations}{65}{}%
+\contentsline {subsection}{\numberline {11.2.3}Long Winded Conclusion}{65}{}%
+\contentsline {subsection}{\numberline {11.2.4}Exercises}{66}{}%
+\contentsline {chapter}{\numberline {12}Infinite Series}{67}{}%
+\contentsline {section}{\numberline {12.1}First Principles}{67}{}%
+\contentsline {subsection}{\numberline {12.1.1}Examples}{68}{}%
+\contentsline {subsection}{\numberline {12.1.2}Excessive Elaborations}{68}{}%
+\contentsline {subsection}{\numberline {12.1.3}Long Winded Conclusion}{69}{}%
+\contentsline {subsection}{\numberline {12.1.4}Exercises}{69}{}%
+\contentsline {section}{\numberline {12.2}Theory vs Practice}{70}{}%
+\contentsline {subsection}{\numberline {12.2.1}Examples}{70}{}%
+\contentsline {subsection}{\numberline {12.2.2}Excessive Elaborations}{71}{}%
+\contentsline {subsection}{\numberline {12.2.3}Long Winded Conclusion}{71}{}%
+\contentsline {subsection}{\numberline {12.2.4}Exercises}{72}{}%
+\contentsline {chapter}{\numberline {13}Theory of Functions}{73}{}%
+\contentsline {section}{\numberline {13.1}First Principles}{73}{}%
+\contentsline {subsection}{\numberline {13.1.1}Examples}{74}{}%
+\contentsline {subsection}{\numberline {13.1.2}Excessive Elaborations}{74}{}%
+\contentsline {subsection}{\numberline {13.1.3}Long Winded Conclusion}{75}{}%
+\contentsline {subsection}{\numberline {13.1.4}Exercises}{75}{}%
+\contentsline {section}{\numberline {13.2}Theory vs Practice}{76}{}%
+\contentsline {subsection}{\numberline {13.2.1}Examples}{76}{}%
+\contentsline {subsection}{\numberline {13.2.2}Excessive Elaborations}{77}{}%
+\contentsline {subsection}{\numberline {13.2.3}Long Winded Conclusion}{78}{}%
+\contentsline {subsection}{\numberline {13.2.4}Exercises}{78}{}%
+\contentsline {chapter}{\numberline {14}Probabilities and Least Squares}{79}{}%
+\contentsline {section}{\numberline {14.1}First Principles}{79}{}%
+\contentsline {subsection}{\numberline {14.1.1}Examples}{80}{}%
+\contentsline {subsection}{\numberline {14.1.2}Excessive Elaborations}{80}{}%
+\contentsline {subsection}{\numberline {14.1.3}Long Winded Conclusion}{81}{}%
+\contentsline {subsection}{\numberline {14.1.4}Exercises}{81}{}%
+\contentsline {section}{\numberline {14.2}Theory vs Practice}{82}{}%
+\contentsline {subsection}{\numberline {14.2.1}Examples}{83}{}%
+\contentsline {subsection}{\numberline {14.2.2}Excessive Elaborations}{83}{}%
+\contentsline {subsection}{\numberline {14.2.3}Long Winded Conclusion}{84}{}%
+\contentsline {subsection}{\numberline {14.2.4}Exercises}{84}{}%
+\contentsline {chapter}{\numberline {15}Analytic Geometry}{85}{}%
+\contentsline {section}{\numberline {15.1}First Principles}{85}{}%
+\contentsline {subsection}{\numberline {15.1.1}Examples}{86}{}%
+\contentsline {subsection}{\numberline {15.1.2}Excessive Elaborations}{86}{}%
+\contentsline {subsection}{\numberline {15.1.3}Long Winded Conclusion}{87}{}%
+\contentsline {subsection}{\numberline {15.1.4}Exercises}{87}{}%
+\contentsline {section}{\numberline {15.2}Theory vs Practice}{88}{}%
+\contentsline {subsection}{\numberline {15.2.1}Examples}{88}{}%
+\contentsline {subsection}{\numberline {15.2.2}Excessive Elaborations}{89}{}%
+\contentsline {subsection}{\numberline {15.2.3}Long Winded Conclusion}{90}{}%
+\contentsline {subsection}{\numberline {15.2.4}Exercises}{90}{}%
+\contentsline {chapter}{\numberline {16}Modern Geometry}{91}{}%
+\contentsline {section}{\numberline {16.1}First Principles}{91}{}%
+\contentsline {subsection}{\numberline {16.1.1}Examples}{92}{}%
+\contentsline {subsection}{\numberline {16.1.2}Excessive Elaborations}{92}{}%
+\contentsline {subsection}{\numberline {16.1.3}Long Winded Conclusion}{93}{}%
+\contentsline {subsection}{\numberline {16.1.4}Exercises}{93}{}%
+\contentsline {section}{\numberline {16.2}Theory vs Practice}{94}{}%
+\contentsline {subsection}{\numberline {16.2.1}Examples}{94}{}%
+\contentsline {subsection}{\numberline {16.2.2}Excessive Elaborations}{95}{}%
+\contentsline {subsection}{\numberline {16.2.3}Long Winded Conclusion}{96}{}%
+\contentsline {subsection}{\numberline {16.2.4}Exercises}{96}{}%
+\contentsline {chapter}{\numberline {17}Trigonometry and Elementary Geometry}{97}{}%
+\contentsline {section}{\numberline {17.1}First Principles}{97}{}%
+\contentsline {subsection}{\numberline {17.1.1}Examples}{98}{}%
+\contentsline {subsection}{\numberline {17.1.2}Excessive Elaborations}{98}{}%
+\contentsline {subsection}{\numberline {17.1.3}Long Winded Conclusion}{99}{}%
+\contentsline {subsection}{\numberline {17.1.4}Exercises}{99}{}%
+\contentsline {section}{\numberline {17.2}Theory vs Practice}{100}{}%
+\contentsline {subsection}{\numberline {17.2.1}Examples}{101}{}%
+\contentsline {subsection}{\numberline {17.2.2}Excessive Elaborations}{101}{}%
+\contentsline {subsection}{\numberline {17.2.3}Long Winded Conclusion}{102}{}%
+\contentsline {subsection}{\numberline {17.2.4}Exercises}{102}{}%
+\contentsline {chapter}{\numberline {18}Non-Euclidean Geometry}{103}{}%
+\contentsline {section}{\numberline {18.1}First Principles}{103}{}%
+\contentsline {subsection}{\numberline {18.1.1}Examples}{104}{}%
+\contentsline {subsection}{\numberline {18.1.2}Excessive Elaborations}{104}{}%
+\contentsline {subsection}{\numberline {18.1.3}Long Winded Conclusion}{105}{}%
+\contentsline {subsection}{\numberline {18.1.4}Exercises}{105}{}%
+\contentsline {section}{\numberline {18.2}Theory vs Practice}{106}{}%
+\contentsline {subsection}{\numberline {18.2.1}Examples}{106}{}%
+\contentsline {subsection}{\numberline {18.2.2}Excessive Elaborations}{107}{}%
+\contentsline {subsection}{\numberline {18.2.3}Long Winded Conclusion}{108}{}%
+\contentsline {subsection}{\numberline {18.2.4}Exercises}{108}{}%
+\contentsline {chapter}{\numberline {19}Bibliography}{109}{}%
+\contentsline {section}{\numberline {19.1}First Principles}{109}{}%
+\contentsline {subsection}{\numberline {19.1.1}Examples}{110}{}%
+\contentsline {subsection}{\numberline {19.1.2}Excessive Elaborations}{110}{}%
+\contentsline {subsection}{\numberline {19.1.3}Long Winded Conclusion}{111}{}%
+\contentsline {subsection}{\numberline {19.1.4}Exercises}{111}{}%
+\contentsline {section}{\numberline {19.2}Theory vs Practice}{112}{}%
+\contentsline {subsection}{\numberline {19.2.1}Examples}{112}{}%
+\contentsline {subsection}{\numberline {19.2.2}Excessive Elaborations}{113}{}%
+\contentsline {subsection}{\numberline {19.2.3}Long Winded Conclusion}{114}{}%
+\contentsline {subsection}{\numberline {19.2.4}Exercises}{114}{}%
+\contentsline {chapter}{\numberline {20}General Tendencies}{115}{}%
+\contentsline {section}{\numberline {20.1}First Principles}{115}{}%
+\contentsline {subsection}{\numberline {20.1.1}Examples}{116}{}%
+\contentsline {subsection}{\numberline {20.1.2}Excessive Elaborations}{116}{}%
+\contentsline {subsection}{\numberline {20.1.3}Long Winded Conclusion}{117}{}%
+\contentsline {subsection}{\numberline {20.1.4}Exercises}{117}{}%
+\contentsline {section}{\numberline {20.2}Theory vs Practice}{118}{}%
+\contentsline {subsection}{\numberline {20.2.1}Examples}{118}{}%
+\contentsline {subsection}{\numberline {20.2.2}Excessive Elaborations}{119}{}%
+\contentsline {subsection}{\numberline {20.2.3}Long Winded Conclusion}{119}{}%
+\contentsline {subsection}{\numberline {20.2.4}Exercises}{120}{}%
