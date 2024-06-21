@@ -64,6 +64,8 @@ ln -s /usr/bin/pip3 /usr/bin/pip
 ```shell
 mkdir ~/.pip
 cd ~/.pip
+# 设置清华源
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 sudo cp /root/.pip/pip.conf .
 sudo chown mick pip.conf
 
