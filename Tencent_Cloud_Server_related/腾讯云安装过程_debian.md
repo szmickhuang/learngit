@@ -37,15 +37,15 @@ apt install curl
 ```shell
 # nodejs 可以自动带入虚拟环境
 curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
-apt install nodejs
+sudo apt install nodejs
 
 ## Run `apt install -y nodejs` to install Node.js 14.x and npm
 ## You may also need development tools to build native addons:
      apt install gcc g++ make
 ## To install the Yarn package manager, run:
-     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-     apt update && sudo apt install yarn
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt update && sudo apt install yarn
 
 # 这里可能需要做一个nodejs的link，link to node
 # node位于/usr/bin
