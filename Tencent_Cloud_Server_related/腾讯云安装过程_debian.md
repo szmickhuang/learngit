@@ -31,6 +31,36 @@ mick ALL=(ALL) ALL
 apt install curl
 ```
 
+## 安装ta-lib
+```shell
+sudo apt install build-essential
+sudo apt install python3-dev
+sudo apt install pip
+```
+
+从ta-lib官网下载最新版的deb文件（官网链接： https://ta-lib.org/install/）
+```shell
+sudo dpkg -i ta-lib_0.6.4_amd64.deb
+```
+
+修改 .bashrc
+增加两行：
+```shell
+export PYTHONPATH=/usr/local/lib/python3.11/dist-packages
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+```
+
+python -m pip install TA-Lib --break-system-packages
+
+如果安装成功，测试一下：
+python
+```python
+import talib
+print(talib.get_functions())
+```
+
+如果运行没报错，应该安装成功了。
+
 ## 安装node.js
 
 通过curl命令向系统添加NodeSource存储库，再安装nodejs 20.x及npm
